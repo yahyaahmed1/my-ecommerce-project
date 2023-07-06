@@ -654,6 +654,7 @@ img.custom-img-indicators.active {
 	#form-product,
 	.comments {
 		padding-right: 15px;
+		color: #000; /*---- X ----*/
 	}
 }
 
