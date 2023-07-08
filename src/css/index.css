@@ -296,7 +296,7 @@ img.custom-img-indicators.active {
 	margin-bottom: 15px;
 	margin-top: 0;
 }
-.panel .custom-text {
+.custom-text {
 	color: #a9a9a9;
 }
 .brand-btns {
@@ -513,6 +513,59 @@ img.custom-img-indicators.active {
 	margin-bottom: 5px;
 }
 
+/* -------------------------------------------- checkout page -------------------------------------------- */
+.custom-media img {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ebebeb;
+	margin-left: 10px;
+}
+.custom-table th,
+.custom-table td {
+	padding: 15px;
+	font-size: 120%;
+	vertical-align: middle;
+	border-bottom: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+}
+.custom-table h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.custom-table th {
+	color: #c2c2c2;
+	font-weight: normal;
+}
+.custom-table th:first-child,
+.custom-table td:first-child {
+	width: 50%;
+}
+.custom-table th:not(:first-child),
+.custom-table td:not(:first-child) {
+	text-align: center;
+}
+.custom-heading {
+	font-size: 36px;
+	margin-bottom: 25px;
+}
+.custom-table tfoot td {
+	border: none;
+	font-size: 150%;
+}
+#total-productions-price {
+	color: #000;
+}
+.custom-btn-checkout {
+	background-color: transparent;
+	border-color: #ff3956;
+	color: #ff3956;
+}
+.custom-btn-checkout:hover,
+.custom-btn-checkout:focus {
+	border-color: #b9001b;
+	color: #b9001b;
+}
+
 /* ------------------------------------------------------------------------------------------------------ */
 
 @media (max-width: 1399px) {
@@ -604,6 +657,9 @@ img.custom-img-indicators.active {
 	#product-carousel .carousel-indicators {
 		right: 10%;
 	}
+	.custom-card h4 {
+		font-size: 15px;
+	}
 }
 
 /* ------------------------------------------ */
@@ -655,6 +711,9 @@ img.custom-img-indicators.active {
 	.comments {
 		padding-right: 15px;
 	}
+	.hide-in-small {
+		display: none;
+	}
 }
 
 /* ------------------------------------------ */
@@ -693,5 +752,11 @@ img.custom-img-indicators.active {
 	}
 	#brands-logos img {
 		margin: 5px 15px;
+	}
+	.custom-table h4 {
+		font-size: 14px;
+	}
+	.small-text {
+		font-size: 11px;
 	}
 }
