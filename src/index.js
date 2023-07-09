@@ -76,6 +76,57 @@ document.querySelectorAll('[data-remove-btn]').forEach(btn => {
   })
 })
 
+// إظهار المدن  بناءا على الدول
+const citiesByCountry = {
+  eg: ["القاهرة", "الإسكندرية", "سوهاج", "أسوان"],
+  sa: ["جدة", "المدينة المنورة"],
+  uae: ["أبو ظبي", "دبي"],
+  kuw: ["الأندلس", "الصباحية"]
+}
+document.querySelectorAll('select[name="country"]').forEach(item => {
+  item.addEventListener("change", () => {
+    const country = item.value;
+    const cities = citiesByCountry[country];
+
+    document.querySelectorAll("#payment-cities option").forEach(option => option.remove());
+
+    const firstOption = document.createElement('option');
+    const fOptionText = document.createTextNode('أختر مدينة');
+    firstOption.appendChild(fOptionText);
+    firstOption.setAttribute('value', '');
+    firstOption.setAttribute('disabled', 'true');
+    firstOption.setAttribute('selected', 'true');
+
+    const citiesOption = document.getElementById('payment-cities');
+    citiesOption.appendChild(firstOption);
+
+    cities.forEach(city => {
+      const newOption = document.createElement('option');
+      const nOptionText = document.createTextNode(city);
+      newOption.appendChild(nOptionText);
+      newOption.setAttribute('value', city);
+      citiesOption.appendChild(newOption)
+    })
+  })
+})
+
+// التبديل بين الدفع بالبطاقة او عند الاستلام
+document.querySelectorAll('#form-checkout input[name="payment-method"]').forEach(method => {
+  method.addEventListener("change", () => {
+    const paymentMethod = method.value;
+    const creditCardInputs = document.querySelectorAll('#credit-card-info input');
+    if (paymentMethod === 'on-delivery') {
+      creditCardInputs.forEach(input => {
+        input.style.display = "none"
+      })
+    } else {
+      creditCardInputs.forEach(input => {
+        input.style.display = "block"
+      })
+    }
+  })
+})
+
 // تغير تنسيق المقاسات والاحجام
 let sizeOption = document.querySelectorAll(".size-option");
 let sizeRadios = document.querySelectorAll(".size-option input[type='radio']");

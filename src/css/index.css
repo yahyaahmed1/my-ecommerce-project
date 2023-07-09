@@ -566,6 +566,22 @@ img.custom-img-indicators.active {
 	color: #b9001b;
 }
 
+/* -------------------------------------------- payment page -------------------------------------------- */
+#form-checkout .custom-input:hover,
+#form-checkout .custom-input:focus {
+	outline-color: transparent;
+	box-shadow: none;
+	border-color: #ff5a5f;
+}
+.custom-input-details {
+	border-width: 2px;
+	border-radius: 3px;
+	height: 46px !important;
+	padding: 0 16px;
+	font-size: 18px;
+	width: 98%;
+}
+
 /* ------------------------------------------------------------------------------------------------------ */
 
 @media (max-width: 1399px) {
