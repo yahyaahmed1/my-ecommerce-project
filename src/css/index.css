@@ -635,6 +635,26 @@ img.custom-img-indicators.active {
 	background-color: #fff !important;
 	border-color: #f8ad47 !important;
 }
+/* -------------------------------------------- contact page -------------------------------------------- */
+.map-position {
+	padding: 0 !important;
+}
+#form-subscription {
+	margin-bottom: 25px;
+}
+.contact-ways input[name="name"] {
+	margin-bottom: 15px;
+}
+.contact-message {
+	height: auto !important;
+}
+.contact-info .custom-contact-icon {
+	color: #f8ad47;
+	margin-left: 3px;
+}
+.contact-info div {
+	margin-bottom: 5px;
+}
 
 /* ------------------------------------------------------------------------------------------------------ */
 

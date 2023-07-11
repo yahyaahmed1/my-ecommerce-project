@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- بداية القائمة العلوية -->
+    <div class="row">
+      <nav class="navbar custom-navbar navbar-expand-lg">
+        <div class="container px-0">
+          <div class="navbar-header">
+            <button class="navbar-toggler bars-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars fa-lg"></i>
+            </button>
+            <a href="./checkout.html" class="cart-btn btn bars-btn me-2 d-lg-none">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="index.html" class="navbar-brand me-5">
+              <img src="./images/logo.png" alt="متجر عربى" />
+            </a>
+          </div>
+          <form action="" class="d-flex inline-form">
+            <input type="search" class="form-control custom-search-field" placeholder="ابحث..." />
+            <div class="dropdown">
+              <a href="#" id="navbar-dropdown" class="nav-link dropdown-toggle custom-choose-btn custom-choose-btn-2"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                اختر فئة
+              </a>
+              <ul class="dropdown-menu custom-choose-menu">
+                <li>
+                  <div class="checkbox ms-2">
+                    <label>
+                      <input type="checkbox" name="search-category" value="men" />
+                      <span>رجالى</span>
+                    </label>
+                  </div>
+                </li>
+                <!-- ------------------------------ -->
+                <li>
+                  <div class="checkbox ms-2">
+                    <label>
+                      <input type="checkbox" name="search-category" value="women" />
+                      <span>نسائى</span>
+                    </label>
+                  </div>
+                </li>
+                <!-- ------------------------------ -->
+                <li>
+                  <div class="checkbox ms-2">
+                    <label>
+                      <input type="checkbox" name="search-category" value="kids" />
+                      <span>اطفالى</span>
+                    </label>
+                  </div>
+                </li>
+                <!-- ------------------------------ -->
+              </ul>
+            </div>
+            <button type="submit" class="btn search-btn">ابحث</button>
+          </form>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="categories" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  اقسام المتجر
+                </a>
+                <ul class="dropdown-menu custom-categories-menu">
+                  <li><a class="dropdown-item" href="#">رجالى</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">نسائى</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">اطفالى</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./search.html">البحث المتقدم</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./contact.html" aria-current="page">تواصل معنا</a>
+              </li>
+              <li class="nav-item mt-xl-2">
+                <a href="./checkout.html" class="cart-btn btn d-none d-lg-block" id="cart-btn" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" data-bs-title="عربة الشراء">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- نهاية القائمة العلوية -->
+
+    <!-- بداية خريطة الموقع -->
+    <div class="row">
+      <div class="col-12 map-position">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.053955299266!2d55.27433581900834!3d25.20140287407241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f427df232cc09%3A0xefb4ab46ff4a37!2z2KjYsdisINiu2YTZitmB2KkgLyDYr9io2Yog2YXZiNmE!5e0!3m2!1sar!2seg!4v1689067307357!5m2!1sar!2seg"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <!-- نهاية خريطة الموقع -->
+    <!-- بداية جسم الصفحة -->
+    <div class="container">
+      <!-- بداية قائمة التشعب -->
+      <div class="container">
+        <div class="row" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb custom-breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">الصفحة الرئيسية</a></li>
+            <li class="breadcrumb-item active">تواصل معنا</li>
+          </ol>
+        </div>
+      </div>
+      <!-- نهاية قائمة التشعب -->
+      <div class="contact-ways row ">
+        <!-- قسم التواصل -->
+        <div class="col-lg-3 offset-lg-2">
+          <h4 class="heading-border">معلومات التواصل</h4>
+          <div class="contact-info mb-3">
+            <div>
+              <i class="fa-solid fa-phone custom-contact-icon"></i>
+              <span>1987 6543 210+</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope custom-contact-icon"></i>
+              <span>info@example.com</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot custom-contact-icon"></i>
+              <span>الإمارات العربية المتحدة - دبى - برج خليفة - خليفة مول</span>
+            </div>
+          </div>
+          <h4 class="heading-border">اشترك بالنشرة البريدية</h4>
+          <form action="" id="form-subscription">
+            <div class="input-group">
+              <input type="email" id="contact-email" class="form-control" placeholder="البريد الالكترونى" required>
+              <button class="btn custom-btn-warning">متابعة</button>
+            </div>
+          </form>
+        </div>
+        <!-- قسم اترك رسالة -->
+        <div class="col-lg-6">
+          <h4 class="pb-3">اترك رسالة</h4>
+          <form action="">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="name" placeholder="الأسم" class="form-control custom-input-details" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" name="eamil" placeholder="البريد الالكترونى"
+                  class="form-control custom-input-details" required>
+              </div>
+            </div>
+            <div class="mt-3">
+              <textarea rows="2" name="message" class="form-control custom-input-details contact-message w-100"
+                placeholder="الرسالة..." required></textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn custom-btn-warning custom-btn-with-icon">
+                ارسال رسالة
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- نهاية جسم الصفحة -->
+
+    <!-- بداية القائمة السفلية -->
+    <footer class="row">
+      <div id="brands-logos" class="text-center">
+        <span>المتجر وكيل معتمد لكبرى الماركات العالمية</span>
+        <div class="brands-container">
+          <img src="./images/adidas.png" alt="adidas" />
+          <img src="./images/lacoste.png" alt="lacoste" />
+          <img src="./images/puma.png" alt="puma" />
+          <img src="./images/polo.png" alt="polo" />
+        </div>
+      </div>
+      <div id="footerNav" class="text-center">
+        <div class="footer-logo">
+          <a href="./index.html"><img src="./images/logo_footer.png" alt="logo" /></a>
+        </div>
+        <div class="footer-nav-links d-none d-md-block">
+          <a href="./index.html">الصفحة الرئيسية</a>
+          <a href="./search.html">البحث المتقدم</a>
+          <a href="./contact.html">تواصل معنا</a>
+        </div>
+        <div class="newsletter col-md-6 offset-md-3 d-flex align-items-center justify-content-center">
+          <form action="" class="needs-validation" novalidate>
+            <label for="footer-input">تابع النشرة البريدية لأفضل العروض</label>
+            <br />
+            <div class="input-group">
+              <input type="email" name="email" id="footer-input" class="form-control custom-input"
+                placeholder="البريد الالكترونى..." required />
+              <button type="submit" class="btn custom-btn-warning">
+                متابعة
+              </button>
+              <div class="invalid-feedback">
+                برجاء التأكد من صحة البريد الالكترونى
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="footer-copyright-social">
+        <div class="container">
+          <div class="clearfix">
+            <div id="copyright" class="float-start">
+              كل الحقوق محفوظة <span id="fullYear"></span>
+            </div>
+            <div id="social-icons" class="float-end">
+              <a href="https://www.facebook.com"><i class="fa-brands fa-lg fa-facebook"></i></a>
+              <a href="https://www.twitter.com"><i class="fa-brands fa-lg fa-twitter"></i></a>
+              <a href="https://www.instagram.com"><i class="fa-brands fa-lg fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- نهاية القائمة السفلية -->
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
