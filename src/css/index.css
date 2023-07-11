@@ -212,7 +212,7 @@ img.custom-img-indicators.active {
 	margin-bottom: 25px;
 }
 .custom-card img {
-	height: 250px;
+	max-height: 250px;
 	max-width: 100%;
 }
 .custom-card {
@@ -582,6 +582,60 @@ img.custom-img-indicators.active {
 	width: 98%;
 }
 
+/* -------------------------------------------- search page -------------------------------------------- */
+#form-advanced-search {
+	border: 1px solid #ebebeb;
+	padding-bottom: 20px;
+	margin-bottom: 35px;
+	height: fit-content;
+}
+#form-advanced-search .panel {
+	border: none;
+	padding: 5px;
+}
+#form-advanced-search label {
+	font-weight: bold;
+	cursor: pointer;
+}
+#search-result .custom-card {
+	margin-bottom: 50px !important;
+}
+.panel .card-header {
+	background-color: transparent;
+	margin-bottom: 15px;
+	padding-bottom: 13px;
+}
+.custom-list-group {
+	border-bottom: 1px solid #ebebeb;
+	user-select: none;
+}
+.custom-list-group .list-group-item {
+	border: none;
+}
+.custom-pagination .page-link {
+	margin: auto 3px !important;
+	border: 1px solid #ebebeb !important;
+	width: 32px !important;
+	height: 32px !important;
+	color: #c2c2c2 !important;
+	text-decoration: none !important;
+	outline: none !important;
+	transition: all 0.3s ease !important;
+	padding-top: 3px !important;
+}
+.custom-pagination .page-item.active .page-link {
+	background-color: #f8ad47 !important;
+	color: #fff !important;
+	border-color: #f8ad47 !important;
+}
+.custom-pagination .page-link:active,
+.custom-pagination .page-link:focus,
+.custom-pagination .page-link:hover {
+	color: #f8ad47 !important;
+	background-color: #fff !important;
+	border-color: #f8ad47 !important;
+}
+
 /* ------------------------------------------------------------------------------------------------------ */
 
 @media (max-width: 1399px) {
@@ -644,9 +698,6 @@ img.custom-img-indicators.active {
 		margin: 10px auto 0;
 		font-weight: 400;
 	}
-	.custom-card img {
-		height: 250px;
-	}
 	#row-brands .carousel-inner img {
 		width: 200px !important;
 		height: auto !important;
@@ -675,6 +726,11 @@ img.custom-img-indicators.active {
 	}
 	.custom-card h4 {
 		font-size: 15px;
+	}
+	.search-pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -734,14 +790,6 @@ img.custom-img-indicators.active {
 
 /* ------------------------------------------ */
 
-@media (max-width: 991px) and (min-width: 767px) {
-	.custom-card img {
-		height: 200px;
-	}
-}
-
-/* ------------------------------------------ */
-
 @media (max-width: 575px) {
 	.inline-form .custom-search-field {
 		width: 80%;
@@ -774,5 +822,8 @@ img.custom-img-indicators.active {
 	}
 	.small-text {
 		font-size: 11px;
+	}
+	.breadcrumb-item {
+		font-size: 12px;
 	}
 }
