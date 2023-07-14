@@ -1,8 +1,9 @@
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/scss/bootstrap.scss";
 import "./css/index.css";
 import "@fortawesome/fontawesome-free/js/all.min";
 const Swal = require('sweetalert2');
+import "./sass/styles.scss"
 
 // الرسالة المنبثقة من عربة الشراء
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');

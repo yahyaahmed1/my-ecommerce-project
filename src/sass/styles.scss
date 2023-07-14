@@ -1,0 +1,99 @@
+@import "./variables";
+@import "./custom-table";
+@import "./mixins";
+@import "./custom-card.scss";
+
+.custom-search-field,
+.dropdown a.custom-choose-btn {
+	border: 1px solid #ebebeb;
+	box-shadow: none;
+	border-radius: 2px;
+	color: #868686;
+	height: 38px;
+	padding: 6px 16px 7px;
+	transition: all 0.5s ease;
+}
+.custom-search-field:focus {
+	border-color: $brand-danger-lighten;
+	box-shadow: 0 0 4px 2px $brand-danger-lighten;
+}
+.dropdown a.custom-choose-btn:hover {
+	color: $brand-danger-darken;
+	background-color: #d4d4d4;
+	border: 1px solid #8c8c8c;
+	border-right: 0;
+}
+.dropdown a.custom-choose-btn:focus {
+	color: $brand-danger-darken;
+}
+.search-btn {
+	background-color: $brand-danger;
+	color: #fff;
+	padding: 5px 15px 7px;
+	height: 38px;
+	width: 65px;
+	border-radius: 2px 0 0 2px;
+	font-weight: 700;
+	font-size: 14px;
+	border-color: $brand-danger;
+}
+.search-btn {
+	&:hover,
+	&:focus,
+	&:active,
+	&:active:hover,
+	&:active:focus {
+		background-color: $brand-danger-darken;
+		color: #fff;
+		border-color: $brand-danger-darken;
+	}
+}
+
+.overlay > button {
+	background-color: #fff;
+	color: $brand-primary;
+	font-weight: 700;
+}
+
+.custom-btn-shop {
+	background-color: transparent !important;
+	border: 1px solid $brand-warning !important;
+	color: $brand-warning !important;
+	transition: all 0.5s ease;
+	color: #fff;
+}
+
+a.custom-btn-shop:hover,
+a.custom-btn-shop:focus,
+a.custom-btn-shop:active,
+a.custom-btn-shop:active:hover,
+a.custom-btn-shop:active:focus {
+	border-color: $brand-warning-darken !important;
+	color: $brand-warning-darken !important;
+}
+
+.custom-btn-warning:hover,
+.custom-btn-warning:focus,
+.custom-btn-warning:active,
+.custom-btn-warning:active:hover,
+.custom-btn-warning:active:focus {
+	background-color: $brand-warning-darken;
+	border-color: transparent;
+}
+
+.custom-btn-warning {
+	color: #000;
+	background-color: $brand-warning;
+	border-color: $brand-warning;
+}
+
+.custom-btn-checkout {
+	background-color: transparent;
+	border-color: $brand-danger;
+	color: $brand-danger;
+}
+.custom-btn-checkout:hover,
+.custom-btn-checkout:focus {
+	border-color: $brand-danger-darken;
+	color: $brand-danger-darken;
+}

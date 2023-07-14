@@ -24,29 +24,7 @@ body {
 	background-color: #fff;
 	padding: 15px 0;
 }
-.custom-search-field,
-.dropdown a.custom-choose-btn {
-	border: 1px solid #ebebeb;
-	box-shadow: none;
-	border-radius: 2px;
-	color: #868686;
-	height: 38px;
-	padding: 6px 16px 7px;
-	transition: all 0.5s ease;
-}
-.custom-search-field:focus {
-	border-color: #ff5a5f;
-	box-shadow: 0 0 4px 2px #ff5a5f;
-}
-.dropdown a.custom-choose-btn:hover {
-	color: #ff5a5f;
-	background-color: #d4d4d4;
-	border: 1px solid #8c8c8c;
-	border-right: 0;
-}
-.dropdown a.custom-choose-btn:focus {
-	color: #ff5a5f;
-}
+
 .custom-choose-btn-2 {
 	border-right: 0 !important;
 	border-radius: 0 !important;
@@ -55,26 +33,6 @@ body {
 	border-radius: 2px;
 	box-shadow: 0 2px 5px 0 #ebebeb;
 	color: #777;
-}
-.search-btn {
-	background-color: #ff5a5f;
-	color: #fff;
-	padding: 5px 15px 7px;
-	height: 38px;
-	width: 65px;
-	border-radius: 2px 0 0 2px;
-	font-weight: 700;
-	font-size: 14px;
-	border-color: #ff5a5f;
-}
-.search-btn:hover,
-.search-btn:focus,
-.search-btn:active,
-.search-btn:active:hover,
-.search-btn:active:focus {
-	background-color: #c2101e;
-	color: #fff;
-	border-color: #c2101e;
 }
 .nav-link {
 	color: #555;
@@ -133,20 +91,7 @@ a.cart-btn {
 	font-size: 175%;
 	margin-top: 18px;
 }
-.custom-btn-shop {
-	background-color: transparent !important;
-	border: 1px solid #f8ad78 !important;
-	color: #f8ad78 !important;
-	transition: all 0.5s ease;
-}
-a.custom-btn-shop:hover,
-a.custom-btn-shop:focus,
-a.custom-btn-shop:active,
-a.custom-btn-shop:active:hover,
-a.custom-btn-shop:active:focus {
-	border-color: #b86d07 !important;
-	color: #b86d07 !important;
-}
+
 .sell {
 	background-color: #53ccd7;
 	color: #fff;
@@ -211,23 +156,6 @@ img.custom-img-indicators.active {
 	font-size: 24px;
 	margin-bottom: 25px;
 }
-.custom-card img {
-	max-height: 250px;
-	max-width: 100%;
-}
-.custom-card {
-	border: 2px solid #eef0ea;
-	padding: 8px;
-	cursor: pointer;
-	transition: all 0.5s ease;
-	margin-bottom: 75px;
-}
-.custom-card:hover {
-	border-color: #53ccd7;
-}
-.custom-card h4 {
-	font-size: 16px;
-}
 .price {
 	color: #53ccd7;
 }
@@ -252,20 +180,7 @@ img.custom-img-indicators.active {
 .overlay:hover {
 	opacity: 1;
 }
-.overlay > button {
-	background-color: #fff;
-	color: #53ccd7;
-	font-weight: 700;
-}
-.custom-card .sell {
-	padding: 5px 10px;
-	position: absolute;
-	left: 16px;
-	top: 14px;
-}
-.custom-card .sell::after {
-	content: "-";
-}
+
 .custom-indicators-bestSeller {
 	bottom: -5px !important;
 }
@@ -360,19 +275,6 @@ img.custom-img-indicators.active {
 	opacity: 0.6;
 	border: none;
 	height: 38px;
-}
-.custom-btn-warning {
-	color: #000;
-	background-color: #f3af41;
-	border-color: #f3af41;
-}
-.custom-btn-warning:hover,
-.custom-btn-warning:active,
-.custom-btn-warning:focus,
-.custom-btn-warning:active:focus,
-.custom-btn-warning:active:hover {
-	background-color: #b86d07;
-	border-color: #b86d07;
 }
 .newsletter form button {
 	border-radius: 3px 0 0 3px !important;
@@ -520,50 +422,14 @@ img.custom-img-indicators.active {
 	border: 1px solid #ebebeb;
 	margin-left: 10px;
 }
-.custom-table th,
-.custom-table td {
-	padding: 15px;
-	font-size: 120%;
-	vertical-align: middle;
-	border-bottom: 1px solid #ebebeb;
-	border-top: 1px solid #ebebeb;
-}
-.custom-table h4 {
-	font-size: 18px;
-	margin: 10px 0;
-}
-.custom-table th {
-	color: #c2c2c2;
-	font-weight: normal;
-}
-.custom-table th:first-child,
-.custom-table td:first-child {
-	width: 50%;
-}
-.custom-table th:not(:first-child),
-.custom-table td:not(:first-child) {
-	text-align: center;
-}
+
 .custom-heading {
 	font-size: 36px;
 	margin-bottom: 25px;
 }
-.custom-table tfoot td {
-	border: none;
-	font-size: 150%;
-}
+
 #total-productions-price {
 	color: #000;
-}
-.custom-btn-checkout {
-	background-color: transparent;
-	border-color: #ff3956;
-	color: #ff3956;
-}
-.custom-btn-checkout:hover,
-.custom-btn-checkout:focus {
-	border-color: #b9001b;
-	color: #b9001b;
 }
 
 /* -------------------------------------------- payment page -------------------------------------------- */
@@ -744,9 +610,6 @@ img.custom-img-indicators.active {
 	#product-carousel .carousel-indicators {
 		right: 10%;
 	}
-	.custom-card h4 {
-		font-size: 15px;
-	}
 	.search-pagination {
 		display: flex;
 		justify-content: center;
@@ -770,15 +633,6 @@ img.custom-img-indicators.active {
 	}
 	#carousel-featured .carousel-item img {
 		height: 250px;
-	}
-	#carousel-most-sold-alt .custom-card img {
-		height: 250px;
-		max-width: 240px;
-		width: 100%;
-		margin: auto;
-	}
-	.custom-card {
-		margin-bottom: 10px;
 	}
 	#carousel-most-sold-alt button {
 		margin-bottom: 25px;
